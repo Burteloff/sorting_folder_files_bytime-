@@ -1,6 +1,9 @@
 #
 import os, time, shutil
-name='.\\icons' #переделать на input(), пока для теста оставить эту папку
+file_name='.\\icons' #переделать на input(), пока для теста оставить эту папку
+class SortTime():
+    def __init__(self,file_name):
+        self.file_name=file_name #принимаем название файлика
 for dirpath,dirnames,filenames in os.walk(name):
     print(f"{dirpath:-^30}")
     for file in filenames:
