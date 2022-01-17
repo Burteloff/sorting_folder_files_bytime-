@@ -1,6 +1,6 @@
 #
 import os, time, shutil
-file_name='.\\icons' #переделать на input(), пока для теста оставить эту папку
+file_name=input("Введите полный путь к папке, которую хотите отсортировать")
 class SortTime():
     def __init__(self,file_name):
         self.file_name=file_name #принимаем название файлика
@@ -53,3 +53,4 @@ class SortTime():
                         else:
                             shutil.copy2(full_file, mon_file)
 
+obj_file=SortTime(file_name)
